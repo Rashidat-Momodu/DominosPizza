@@ -1,0 +1,59 @@
+.orderContainer {
+    margin: 0px auto;
+    width: 400px;
+}
+.orderHeading {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #2B3241;
+}
+.card{
+    border: 1px solid black;
+    margin: 20px;
+    padding: 5px;
+    box-shadow: 0 8px 16pz 0 #000000;
+}
+
+.cardContainer {
+    border: 1px solid black;
+    
+}
+
+.cardContent {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+
+
+}
+
+.cardContent2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order {
+    font-size: 12px;
+    font-family: arial;
+    font-weight: 700;
+    color: #2B3241;
+}
+
+.date {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #798397;
+}
+
+.addToCart {
+    padding: 8px, 16px, 8px, 16px;
+    background-color: #E31836;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+}

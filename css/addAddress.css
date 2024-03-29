@@ -1,0 +1,70 @@
+body {
+    background-color: #ffffff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2B3241;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    font-family: arial;
+    font-weight: 400;
+    font-size: 16px;
+    color: #2B3241;
+    margin: 10px;
+}
+
+.selectId {
+    background-color: #ffffff;
+    border: 1px solid #D7DFE9;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+
+.btn {
+    display: flex;
+    margin-top: 10px;
+}
+
+.btn1 {
+    padding: 12px;
+    border: 1px solid #E31836;
+    background-color: #ffffff;
+    color: #E31836;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: raleway;
+    border-radius: 8px;
+}
+
+.btn2 {
+    padding: 12px;
+    background-color: #E31836;
+    color:#ffffff ;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: arial;
+    border: none;
+    border-radius: 8px;
+}
+.btn3 {
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #E31836;
+    color:#ffffff ;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: arial;
+}

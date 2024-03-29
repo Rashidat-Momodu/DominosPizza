@@ -1,0 +1,98 @@
+body {
+    background-color: #F8F8F8;
+}
+.ourStoresContainer {
+    border: 1px solid blue;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+.div1Wrapper {
+    margin: 10px;
+
+}
+
+#searchInput{
+    width: Fixed (343px)px;
+    height: Hug (48px)px;
+    padding: 12px 16px 12px 16px;
+    gap: 10px;
+    border-radius: 8px;
+}
+
+.OurstoresFont {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #2B3241;
+    line-height: 27.6px;
+}
+
+.div1 {
+    padding: 16px;
+    background-color: #ffffff;
+    padding: 10px;
+}
+.storesAddress {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13.8px;
+    text-align: left;
+    color: #5E677C;
+}
+
+.storesRoad {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.4px;
+    text-align: left;
+    color: #2B3241;
+}
+
+.storeState {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #5E677C;
+}
+
+.storeCareLine {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13.8px;
+    text-align: left;
+    color: #5E677C;
+}
+
+.contact {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #2B3241;
+}
+
+.pickup {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13.8px;
+    text-align: left;
+    color: #5E677C;
+}
+
+.days {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.4px;
+    text-align: left;
+    color: #2B3241;
+}
+

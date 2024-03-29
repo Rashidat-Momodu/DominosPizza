@@ -1,0 +1,58 @@
+.container{
+ padding: 20px;
+
+}
+
+input, .selectId {
+    padding: 10px;
+}
+
+#ourStores {
+    border: none;
+    padding: 10px;
+}
+
+.div1 {
+    border: 1px solid red;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/*addAddress.html,editAddress.html*/
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.label{
+     display: flex;
+     flex-direction: column;
+}
+
+/*addAddress.html*/
+.btn {
+    display: flex;
+}
+
+
+/* orderHistory.Html*/
+
+.cardContainer {
+    margin: auto;
+    border: 1px solid black;
+}
+
+.cardContent {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.cardContent2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*savedAddress.html*/
+.savedAddress {
+    display: flex;
+}
