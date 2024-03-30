@@ -1,0 +1,38 @@
+.spinContainer {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+   margin: 250px;
+}
+
+.colored {
+width: 425px;
+height: 41px;
+top: 844px;
+left: -11px;
+gap: 0px;
+border: 380px 0px 0px 0px;
+opacity: 0px;
+background-color:#005C84;
+}
+
+.coloredArrow {
+
+}
+
+.eclipse {
+width: 100px;
+height: 100px;
+top: 644px;
+left: 147px;
+gap: 0px;
+opacity: 0px;
+background-color: 
+#D01632;
+border-radius: 100%;
+}
+
+.eclipse > svg {
+    align-items: center;
+  text-align: 10px;
+}

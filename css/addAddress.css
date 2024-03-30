@@ -35,6 +35,7 @@ h4 {
 .btn {
     display: flex;
     margin-top: 10px;
+    margin: 0px auto;
 }
 
 .btn1 {
