@@ -1,0 +1,191 @@
+
+body{
+    background-color: #F8F8F8;
+    margin: 0;
+    padding: 0;
+    width: 375px;
+  padding: 25px;
+  }
+
+  .cover{
+    margin-top: 30px;
+  }
+  
+  div.inner-container{
+      display: flex;
+      gap: 3px;
+  }
+  
+  .img1{
+      fill: #444D61;
+  }
+  
+  .header{
+  font-family: Lusitana;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: left;
+  color: #2B3241;
+  
+  }
+  
+  .firstP{
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight:  400;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  text-align: left;
+  color: #444D61;
+  
+  }
+  
+  .secondP{
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.005em;
+  text-align: left;
+  color: #798397;
+  }
+  
+  div.cover{
+      background-color: #FFFFFF;
+      padding-left: 18px;
+      border-radius: 7px;
+      max-width: 343px;
+  }
+ 
+  
+  
+  .name{
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  text-align: left;
+  color: #798397;
+  display: flex;
+  justify-content: flex-start;
+  gap: 150px;
+  margin-top: -20px;
+  }
+  
+  
+  .detail, .details{
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.005em;
+  text-align: left;
+  color: #444D61;
+  display: flex;
+  justify-content: flex-start;
+  gap: 90px;
+  margin-top: -30px;
+  
+  }
+  
+  
+    
+  .img2{
+    position: relative;
+    top: 2px;
+  }
+  
+  img3{
+    position: relative;
+    top: 2px;
+  }
+  
+  .count-down{
+   color:  #444D61;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  text-align: left;
+  }
+  
+
+  div.btn-wrap{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .btn-transfer{
+    margin-bottom: 10px;
+    background-color: #E31836;
+    box-sizing: border-box;
+    border: 0px;
+    width: 343px;
+    height: 50px;
+    padding: 16px 0px 16px 0px;
+    border-radius: 8px;
+    color: #FFFFFF;
+  }
+  
+    .btn-change{
+    width: 343px;
+    height: 56px;
+    padding: 16px 0px 16px 0px;
+    border-radius: 8px;
+    border: 1px solid #E31837;
+    color:  #E31837;
+    background-color: #FFFFFF;
+    }
+
+    .sect{
+           
+            filter: blur(0.9px); /* Adjust the blur amount as needed */
+            z-index: -1; /* Ensure it's behind other content */
+            top: 10px;
+            position: fixed;
+    }
+
+    div.content {
+        z-index: 2; /* Ensure it's above the blurred background */
+        margin-top: 80px;
+        margin-left: px;
+        background-color: #FFFFFF;
+        width: 100 px ;
+        height: 120px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding-top: 20px;
+       
+    }
+
+    .content{
+      max-width: 342px;
+    }
+
+    .confam{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0.005em;
+        color: #2B3241;
+}
+
+.confam2{
+    font-family: Raleway;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #5E677C;
+    margin-top: -20px;
+    
+}
+
+
+
+
+
+    

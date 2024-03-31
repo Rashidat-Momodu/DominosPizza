@@ -1,0 +1,89 @@
+body{
+    background-color: #F8F8F8;
+    margin: 0;
+    padding: 0;
+    width: 375px;
+    text-align: center;
+    
+}
+
+.container{
+width: 343px;
+height: 250px;
+margin: 40px;
+padding: 40px 16px 40px 16px;
+border-radius: 8px;
+background-color: #FFFFFF;
+text-align: center;
+}
+
+.copy-button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    margin-left: 80px;
+    margin-top: -5px;
+     
+}
+
+.inner-container{
+    width: 311px;
+    height: 144px;
+    
+}
+
+.receive{
+font-family: Raleway;
+font-size: 14px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0.005em;
+text-align: center;
+color: #2B3241;
+
+}
+
+.use{
+font-family: Raleway;
+font-size: 11px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.005em;
+text-align: center;
+margin-top: -20px;
+color: #444D61;
+
+}
+
+.order{
+font-family: Raleway;
+font-size: 10px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0.005em;
+text-align: center;
+color:  #798397;
+margin-top: -10px;
+
+}
+
+.ide{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img5{
+    margin-top: -21px;
+}
+
+.btn13{
+width: 311px;
+height: 50px;
+padding: 16px 0px 16px 0px;
+border-radius: 8px;
+background-color: #E31836;
+color: #FFFFFF;
+border: none;
+margin-top: 50px
+}

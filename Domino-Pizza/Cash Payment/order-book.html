@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="order-book.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="inner-container">
+            <div class="text">
+                <img src="../Images/checkbox-circle.svg" class="img13"/>
+                <h5 class="receive">Order Booked!</h5>
+                <p class="use">Amount to pay on delivery:</p>
+                <p class="use">Use the order ID below to track your order.</p>
+                <div class="ide">
+                <p class="order">Order ID:</p>
+                <button class="copy-button" onclick="copyTextToClipboard()"> 
+                    <img src="../Images/copy.svg" class="textToCopy"/>
+                </button>
+                <div id="copyNotification" style="display: none;">Copied to clipboard!</div> 
+            </div>
+        </div>
+        </div>
+        <button class="btn13">Continue Shopping</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

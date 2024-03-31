@@ -1,0 +1,61 @@
+body{
+    background-color: #F8F8F8;
+    margin: 0;
+    padding: 0;
+    width: 375px;
+    
+}
+
+div.img7{
+    background:  white;
+     border-radius: 50%;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     width: 272px;
+    height: 272px;
+    left: 35.5px;
+    }
+
+    .container{
+        width: 343px;
+        height: 424px;
+        margin: 40px;
+          
+}
+
+
+.img6{
+   margin-left: 60px;
+   margin-top: 50px;
+
+}
+
+.pay-suc{
+font-family: Arial;
+font-size: 16px;
+font-weight: 700;
+line-height: 18.4px;
+text-align: center;
+color: #000000;
+margin-right: 50px;
+
+}
+
+.btn7{
+width: 343px;
+height:50px;
+padding: 16px 0px 16px 0px;
+border-radius: 8px;
+background-color: #E31836;
+color:white;
+border: none;
+}
+
+text.btn7{
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.4px;
+    text-align: center;
+    
+
+}
