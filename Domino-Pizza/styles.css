@@ -1,0 +1,97 @@
+body{
+  background-color: #F8F8F8;
+  margin: 0;
+  padding: 0;
+  width: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  box-sizing: border-box;
+
+}
+
+.img1{
+  fill: #444D61;
+
+}
+
+.select{
+font-weight: bold;
+font-family: Lusitana;
+font-size: 16px;
+font-weight: 700;
+line-height: 22px;
+text-align: left;
+color: #2B3241;
+}
+
+.container {
+  width: 343px;
+  height: 278px;
+  top: 68px;
+  left: 25px;
+  margin: 40px;
+  
+}
+
+
+.checkbox-container{
+  padding: 10px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  margin: 20px 0;
+  display:flex;
+  justify-content: space-between;
+
+}
+
+.checkbox-container label{
+  cursor: pointer;
+}
+
+
+
+.checkbox-container input[type="radio"]:checked ~ label {
+  border-color: 1 px solid #E31836;
+}
+
+
+input{
+  accent-color:  #E31836;
+}
+
+#label1, #label2,#label3{
+font-family: Raleway;
+font-size: 14px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0.005em;
+text-align: left;
+color: #444D61;
+
+}
+
+.interswitch{
+  position: relative;
+  top: 8px;
+}
+
+.payment-button{
+  width: 343px;
+  height: 50px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #E31836;
+  color:white;
+  border: none;
+}
+
+
+.strong{
+  display: flex;
+  justify-content: space-between;
+}

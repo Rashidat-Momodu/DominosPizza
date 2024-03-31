@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="confirm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="content">
+    <img src="../Images/Loader.svg" width="24px" height="24px" class="loader"/>
+    <h4 class="confam">Confirming Payment!</h4>
+   <p class="confam2">Please wait while we confirm payment.</p>
+  </div>
+
+    <section class="sect">
+  <img src="../Images/left-Arrow.svg"/ class="img1">
+    <h3 class="header">Bank Transfer</h3>
+    <p class="firstP">Transfer the exact amount specified to the account below.</p>
+    
+    <div class="cover">
+        <div class="inner-container">
+            <img src="../Images/warning.svg"/>
+            <p class="secondP">Only make transfer to this account</p>
+       </div>
+        <div class="name">
+            <p>Bank Name</p>
+            <p>Account Number</p>
+       </div>
+
+      <div class="detail">
+            <p>Access Bank</p>
+            <p>014894501 <img src="../Images/copy.svg" class="img2"/></p>
+      </div>
+            <div class="name">
+                <p>Account Name</p>
+                <p>Amount to Pay</p>
+          </div>
+           
+           <div class="details">
+                <p>Domino’s NG</p>
+                <p><img src="../Images/copy.svg" class="img3"/></p>
+         </div>
+    </div>
+
+  <div class="btn-wrap">
+    <p class="count-down" id="timer">Transaction expires in: <span id="countdown">00:30</span></p>
+    <a href="confirm.html"><button class="btn-transfer">I’ve Transfered the Amount</button>
+      </a>
+
+    <button class="btn-change">Change Payment Method</button>
+   </section>
+</div>
+<script>
+ const timeLeft = 30;
+ const timerElement = document.getElementById('countdown');
+  
+ const countdownTimer = setInterval(function() {
+  const minutes = Math.floor(timeLeft / 60);
+      const seconds = timeLeft % 60;
+      
+      timerElement.textContent = (minutes < 10 ? '0' : '') + minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+      
+      if (timeLeft-- <= 0) {
+          clearInterval(countdownTimer);
+          window.location.href = "confirm2.html"; // Redirect to new page when timer expires
+      }
+  }, 5000);
+
+</script>
+    
+
+</body>
+</html>

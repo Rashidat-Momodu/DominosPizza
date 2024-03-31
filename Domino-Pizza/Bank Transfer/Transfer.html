@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Transfer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+  <img src="../Images/left-Arrow.svg" class="img1"/>
+    <h3 class="header">Bank Transfer</h3>
+    <p class="firstP">Transfer the exact amount specified to the account below.</p>
+    <div class="cover">
+    <div class="inner-container">
+    <img src="../Images/warning.svg"/>
+    <p class="secondP">Only make transfer to this account</p>
+  </div>
+    <div>
+        <div class="name">
+        <p>Bank Name</p>
+        <p>Account Number</p>
+    </div>
+
+      <div class="detail">
+        <p>Access Bank</p>
+        <span id="accountNumber">014894501</span> 
+                    <button class="copy-button" onclick="copyTextToClipboard()"> <!-- Added onclick event -->
+                        <img src="../Images/copy.svg" class="textToCopy"/>
+                    </button>
+                    <div id="copyNotification" style="display: none;">Copied to clipboard!</div> 
+      </div>
+         <div class="name"> 
+        <p>Account Name</p>
+        <p>Amount to Pay</p>
+         </div>
+           
+         <div class="details">
+            <p>Domino’s NG</p>
+            
+            <p><span id="accountNumber" class="copy2">N8500</span> </p>
+                    <button class="copy-btn" onclick="copyTextToClipboard()"> 
+                        <img src="../Images/copy.svg" class="textToCopy"/>
+                    </button>
+                    <div id="copyNotification" style="display: none;">Copied to clipboard!</div> 
+         </div>
+    </div>
+  </div>
+
+  <p class="count-down" id="timer">Transaction expires in: <span id="countdown">00:30</span></p>
+    <a href="Transfer2.html"><button class="btn-transfer">I’ve Transfered the Amount</button>
+      </a>
+
+    <button class="btn-change">Change Payment Method</button>
+
+    <script src="/Domino-Pizza/script.js"></script>
+
+</body>
+</html>

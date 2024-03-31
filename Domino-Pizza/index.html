@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domino Pizza</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     
+        <div class="container"> 
+            <img src="./Images/left-Arrow.svg" class="img1"/>
+            <h3 class="select">Select Payment Method</h3>
+            <div class="checkbox-container">
+                <label  for="styled-checkbox1">
+                   Pay on delivery with cash  
+                </label>
+
+                <input type="radio" name="box" id="styled-checkbox1" value="transfer">
+            </div>
+            
+              <div class="checkbox-container">
+                    <label for="styled-checkbox2">
+                    Pay with credit card <img src="./Images/interswitch.svg" class="interswitch"/>
+                    </label>
+
+                    <input type="radio" name="box"  id="styled-checkbox2" value="card"> 
+              </div>
+
+              <div class="checkbox-container"> 
+                    <label for="styled-checkbox3">
+                    Pay with bank transfer
+                    </label>
+
+                    <input type="radio" id="styled-checkbox3" name="box" value="cash">
+              </div>
+                      <div class="strong">
+                        <p id="total-due" style="display: none;"><strong>Total amount to pay:</strong></p>
+                        <p id="total-mane" style="display: none;">N<span >8500</span></p>
+                      </div>
+                      <br>
+                    <button  class="payment-button" style="display:none;"></button>
+                  </div>
+                </div>
+            </div>
+            </div>  
+         </div>
+         <script src="script.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    const totalDueElement = document.getElementById('total-due'); 
+
+    const DueElement = document.getElementById('total-mane');
+
+    // Add event listener to radio buttons
+    radioButtons.forEach(function(radioButton) {
+        radioButton.addEventListener('click', function() {
+            // Show payment button when a radio button is clicked
+            totalDueElement.style.display = 'block'; // Display total amount due
+            DueElement.style.display = 'block';
+        });
+    });
+  });
+
+    
+            // Add red border to the clicked checkbox container
+            if (checkbox.checked) 
+                totalDueElement.style.display = 'block'; // Display total amount due
+                DueElement.style.display = 'block';
+</script>
+</body>
+</html>

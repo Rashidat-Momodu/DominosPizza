@@ -1,0 +1,182 @@
+body{
+    background-color: #F8F8F8;
+    margin: 0;
+    padding: 0;
+    width: 375px;
+    margin: 40px;;
+    padding: 25px;
+  }
+
+
+  .container{
+    width: 343px;
+  }
+
+.img10{
+    fill: #444D61;
+    width: 15.84px;
+    height: 15.84px;
+}
+
+.order-header{
+font-family: Arial;
+font-size: 14px;
+font-weight: 700;
+line-height: 27.6px;
+text-align: left;
+color: #2B3241;
+margin-top: -1px;
+
+}
+
+h2 #orderSummary{
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13.8px;
+    text-align: left;
+    color: #2B3241;
+    }
+
+ .order-pay{
+font-family: Arial;
+font-size: 14px;
+font-weight: 700;
+line-height: 27.6px;
+text-align: left;
+color:black;
+margin-top: 40px;
+   }
+
+   .master{
+    background-color: #0E0F10;
+    width: 344px;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    margin-top: -15px;
+}
+
+
+.master2{
+margin-left: 20px;
+
+}
+
+.cardno{
+    margin-bottom: 10px;
+    margin-left: -40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.credit{
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 18.4px;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.creditP{
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01rem;
+    text-align: left;
+    color: #FFFDFD99;
+    margin-top: -30px;
+
+}
+
+
+.img8{
+    color:#FFFFFF;
+    margin-right: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+.visa{
+    background-color: #B0CFDD;
+    width: 100vw;
+    height: 80px;
+    border-radius: 20px;
+    width: 344px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: center;
+    text-align: center; 
+}
+
+.tota{
+font-family: Arial;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+
+}
+
+.btn10{
+    width: 180px;
+height:56px;
+padding: 16px;
+border-radius: 8px;
+background-color: #E31836;
+color:#FFFFFF;
+border: none;
+margin-top: 38px;
+
+}
+
+.tot-pay{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 18px;
+    
+}
+
+.summary-item{
+    display: flex;
+   justify-content: space-between;
+   color:#798397;
+   font-size: 12px;
+}
+
+#orderSummary{
+width: 339px;
+height:179px;
+margin-top: -20px;
+}
+
+.payee{
+    margin-top: -30px;
+}
+
+.plice{
+    margin-top: -20px;
+}
+
+.tick{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -10px;
+    font-size: 11px;
+    letter-spacing: 0.1rem;
+    gap: 15px;
+    margin-left: 15px;
+}
+

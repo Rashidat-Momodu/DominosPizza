@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Payment Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="Paycontainer">
+    <h5>Select Payment Method </h5>
+    <form id="payment-form">
+      <label for="card-number">Card Number:</label>
+      <input type="text" id="card-number" placeholder="Enter card number">
+      <label for="card-expiry">Expiration Date:</label>
+      <input type="text" id="card-expiry" placeholder="MM/YY">
+      <label for="card-cvc">CVC:</label>
+      <input type="text" id="card-cvc" placeholder="CVC">
+      <button type="submit">Pay Now</button>
+    </form>
+    <div id="payment-status"></div>
+    <button id="btn6">Pay Now</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://js.stripe.com/v3/"></script>
+</body>
+</html>
