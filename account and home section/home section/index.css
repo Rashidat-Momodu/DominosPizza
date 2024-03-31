@@ -1,0 +1,234 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+   outline: none;
+    
+}
+body{
+    width: 100%;
+    background-color: #ffffff;
+
+}
+.logo img{
+    width: 400px;
+    height: 120px;
+    padding-top: 30px;
+}
+.sidebar {
+    height: 100%;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 2px;
+   background-image: url(https://img.freepik.com/premium-photo/tasty-pizza-ingredients-isolated-white-background_185193-5369.jpg);
+   color:white;
+}
+.sidebar-menu{
+    display: flex;
+    flex-direction: column;
+}
+.sidebar-menu a{
+    padding: 5% 5%;
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+.sidebar-menu a:hover{
+background-color: rgb(10, 54, 88);
+border-radius: 60px;
+}
+.sidebar-logout a{
+    padding: 5% 5%;
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+.sidebar-logout a:hover{
+    background-color: rgb(10, 54, 88);
+   border-radius: 50px;
+}
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #d3edee;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 71%;
+   z-index: 1000;
+   border-top-right-radius: 15px;
+   border-top-left-radius: 50px;
+}
+.topbar .navigation{
+    display: flex;
+    align-items: center;
+}
+.topbar .navigation ul{
+    list-style: none;
+}
+.topbar .navigation ul li{
+    display: inline-block;
+    margin: 10px 8px;
+    width: 50px;
+}
+.topbar .navigation ul li a{
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.main-highlight {
+    margin: 3% 0;
+    padding: 2%;
+    background-color: #ffffff;
+    align-items: center;
+}
+.main-header {
+    font-size: 20px;
+    position: fixed;
+    top: 100px;
+    left: 360px;
+}
+.categories {
+    background-color: #ffffff; 
+    padding: 10px;
+}
+
+.categories h2 {
+    margin-bottom: 30px; /* Spacing below the heading */
+}
+
+.categories ul {
+    font-size: 30px;
+    position: sticky;
+    top: 350px;
+    list-style: none; 
+    margin-left: 400px;
+    display: flex; /* Display list items in a row */
+}
+
+.categories ul li {
+    margin-right: 60px; /* Spacing between list items */
+}
+
+
+
+.categories ul li a {
+    text-decoration: none; 
+    color: #000000;
+    border: 1px solid transparent; /* Add transparent border initially */
+   
+}
+
+.categories ul li a:hover {
+   
+    border-color: #ff0000;
+
+}
+
+
+.main-title-1 {
+    font-size: 30px;
+    position: fixed;
+    top: 200px;
+    left: 350px;
+   
+}
+
+.main-pizza{
+    display:flex;
+    float:right;
+    margin-left: 450px;
+    margin-top: 2px;
+    position: sticky;
+    top: 100px;
+    left: 100px;
+}
+.main-pizza li{
+    flex: 0 0 48%;
+    max-width: 100%; 
+    height: auto; 
+    position: fixed;
+    top:100%;
+    left:360px ;
+}
+.head h1{
+    text-align: center;
+    font-size: 43px;
+    color: rgb(255, 11, 11);
+    margin-top: 53px;
+    padding: 12px;
+    margin-left: 123px;
+}
+.head span{
+    color:  rgb(255, 102, 0);
+}
+.tr{
+    margin-top: 200px;
+}
+.crd{
+    display:flex;
+ 
+    margin-left: 450px;
+    margin-top: 2px;
+    position: static;
+    top: 100px;
+    left: 200px;
+    
+}
+.crd .card{
+    width: 300px;
+    border-radius: 10px;
+    margin-inline: 19px;
+    padding: 8px;
+
+}
+.card img{
+    width: 100%;
+}
+.card h2{
+    margin-top: 11px;
+
+}
+.card p{
+    margin-top: 11px;
+}
+.card button{
+    padding: 5% 5%;
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 21px;
+    background-color: rgb(255, 8, 8);
+    color: rgb(16, 68, 255);
+    border-radius: 10px;
+   
+    
+}
+.card button:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+
+
+  
