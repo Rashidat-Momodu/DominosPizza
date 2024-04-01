@@ -32,16 +32,8 @@ color: #2B3241;
     outline: none;
     cursor: pointer;
     margin-left: 85px;
-    margin-top: 6px;
+    margin-top: 10px;
      
-}
-
-button.copy-btn {
-  border: none;
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
-
 }
 
 #accountNumber{
@@ -154,7 +146,7 @@ text-align: left;
   }
 
 
-  span.copy2{
-    margin-top: 60px;
-    margin-left: 15px;
+  #amunt{
+    margin-left: 38px;
   }
+  

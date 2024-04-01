@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container"></div>
-    <img src="../Images/left-Arrow.svg" class="img1"/>
+  <div class="container">
+    <a href="Transfer.html"><img src="../Images/left-Arrow.svg" class="img1"/></a>
     <h3 class="header">Bank Transfer</h3>
     <p class="firstP">Transfer the exact amount specified to the account below.</p>
     <div class="cover">
@@ -26,7 +26,7 @@
       <p>Fidelity Bank</p>
       <span id="accountNumber" class="acctNumber">014894501</span> 
                   <button id="copy-btn" class="copy-button" onclick="copyTextToClipboard()"> <!-- Added onclick event -->
-                      <img src="../Images/copy.svg" class="textToCopy"/>
+                      <img src="../Images/copy.svg" class="textCopied"/>
                   </button>
                   <div id="copyNotification" style="display: none;">Copied to clipboard!</div> 
     </div>
@@ -37,37 +37,22 @@
          
        <div class="details">
           <p>Domino’s NG</p>
-          <span id="accountNumber" class="acctNumber">014894501</span> 
-                  <button id="copy-btn" class="copy-button" onclick="copyTextToClipboard()"> <!-- Added onclick event -->
-                      <img src="../Images/copy.svg" class="textToCopy"/>
-                  </button>
-                  <div id="copyNotification" style="display: none;">Copied to clipboard!</div> 
+           
+                    <p><span id="amunt">N8500</span> 
+                      <button id="copy-button" onclick="copyClipboard()"> 
+                          <img src="../Images/copy.svg" class="textCopied"/>
+                      </button>
+                      <div id="notificationCopy" style="display: none;">Copied!</div> </p>
        </div>
+      </div>
   </div>
-</div>
 <p class="count-down" id="timer">Transaction expires in: <span id="countdown">00:30</span></p>
          <a href="confirm.html"><button class="btn-transfer">Transfer Done</button></a>
-         <a href="index.html"><button class="btn-change">Change Payment Method</button></a>
-    </div>
+         <a href="/Domino-Pizza/index.html"><button class="btn-change">Change Payment Method</button></a>
+   
     
-    <script>
-      // Payment countdown timer
-const timeLeft = 30;
-const timerElement = document.getElementsById('countdown');
-
-const countdownTimer = setInterval(function() {
-    const minutes = Math.floor(timeLeft / 60);
-    const seconds = timeLeft % 60;
-
-    timerElement.textContent = (minutes < 10 ? '0' : '') + minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
-
-    if (timeLeft-- <= 0) {
-        clearInterval(countdownTimer);
-        window.location.href = "confirm.html"; // Redirect to new page when timer expires
-    }
-}, 1000); 
-
-    </script>
+    <script src="/Domino-Pizza/script.js"></script>
+    
     
 </body>
 </html>

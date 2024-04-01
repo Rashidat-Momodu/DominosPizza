@@ -51,22 +51,29 @@
 
     <button class="btn-change">Change Payment Method</button>
    </section>
+
 </div>
 <script>
- const timeLeft = 30;
- const timerElement = document.getElementById('countdown');
   
- const countdownTimer = setInterval(function() {
-  const minutes = Math.floor(timeLeft / 60);
-      const seconds = timeLeft % 60;
-      
-      timerElement.textContent = (minutes < 10 ? '0' : '') + minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
-      
-      if (timeLeft-- <= 0) {
-          clearInterval(countdownTimer);
-          window.location.href = "confirm2.html"; // Redirect to new page when timer expires
-      }
-  }, 5000);
+  let timeLeft = 30; // Initialize the time left
+  const timerElement = document.getElementById('countdown');
+
+  const countdownTimer = setInterval(function() {
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+
+    timerElement.textContent = (minutes < 10 ? '0' : '') + minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+
+    if (timeLeft <= 0) {
+      clearInterval(countdownTimer);
+      // Randomly choose between success or error page
+      const randomPage = Math.random() < 0.5 ? "Success-tick.html" : "non-confirm.html";
+      window.location.href = randomPage; // Redirect to randomly chosen page when timer expires
+    } else {
+      timeLeft--; // Decrement the time left
+    }
+  }, 1000); // Count down every second (1000ms)
+
 
 </script>
     
