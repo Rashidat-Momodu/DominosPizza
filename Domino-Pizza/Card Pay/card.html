@@ -9,29 +9,47 @@
 </head>
 <body>
     <div class="container">
-        <img src="../Images/left-Arrow.svg" class="img7"/>
+        <a href="/Domino-Pizza/index.html"><img src="../Images/left-Arrow.svg" class="img7"/></a>
         <div>
              <h5 class="sel">Select Payment Method</h5>
         </div>
-           <div class="master">
+
+        <div class="master">
+                <label for="styled-checkbox4">
+                    <div class="mester">
                     <img src="../Images/master.svg" width="84.25px" height="51.01px" class="master2"/>
-                <div class="cardno">
-                    <h6 class="credit">Credit card</h6>
-                    <p class="creditP">5335 **** **** 0506</p>
-                </div>
-                    <img src="../Images/Ellipse 57.svg" class="img8"/>
+
+                    <div class="cardno">
+                        <h6 class="credit">Credit card</h6>
+                        <p class="creditP">5335 **** **** 0506</p>
+                    </div>
+                
+                    
+                </label>
+
+                <input type="radio" id="styled-checkbox3" name="box" value="cash">
             </div>
+          </div>
+
+
+
         </br>
-          <div class="visa">
-            <img src="../Images/visa.svg" class="visa2"/>
-            <div class="cardno">
-                <label>
+
+        <div class="visa">
+            <label for="styled-checkbox4">
+                <div class="vista">
+                    <img src="../Images/visa.svg" class="visa2"/>
+
+                <div class="cardno">
                     <h6 class="credit">Debit card</h6>
                     <p class="creditP">3561**** **** 6040</p>
-                </label>
                 </div>
-                <input type="radio" name="box" id="styled-checkbox1" value="visa-card">
-          </div>
+            </label>
+
+            <input type="radio" id="styled-checkbox3" name="box" value="cash">
+        </div>
+      </div>
+
           <div id="orderSummary">
             <div class="summary-item">
                 <p>Order</p>
@@ -58,10 +76,11 @@
                 <p class="estimated"><strong>15-30 mins</strong></p>
             </div>
         </div>
-               <div class="tick">
-               <img src="../Images/Tick Box.svg" width="12px" height="12px"/>
-              <p class="saf2"> save card details for future payments</p>
-              </div>
+
+        <div class="tick">
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <label for="checkbox"><p class="saf2"> save card details for future payments</p></label>
+        </div>
               <div>
               <a href="order-summary.html"><button  class="btn9">Proceed </button></a>
         </div>

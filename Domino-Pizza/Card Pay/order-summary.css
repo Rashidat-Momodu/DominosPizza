@@ -53,14 +53,24 @@ margin-top: 40px;
     width: 344px;
     height: 80px;
     border-radius: 20px;
+   }
+
+
+.mester{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    justify-self: center;
     text-align: center;
-    margin-top: -15px;
+    align-items: center;
+    justify-items: center;
 }
 
+.vista{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
 
 .master2{
 margin-left: 20px;
@@ -112,12 +122,16 @@ margin-left: 20px;
     height: 80px;
     border-radius: 20px;
     width: 344px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-self: center;
-    text-align: center; 
 }
+
+input[type="radio"]{
+    accent-color: transparent;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+  }
 
 .tota{
 font-family: Arial;
@@ -178,5 +192,11 @@ margin-top: -20px;
     letter-spacing: 0.1rem;
     gap: 15px;
     margin-left: 15px;
+}
+input[type="checkbox"]{
+    width: 8px;
+    height: 8px;
+    accent-color:red;
+
 }
 

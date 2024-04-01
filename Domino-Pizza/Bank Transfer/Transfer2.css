@@ -145,3 +145,23 @@ text-align: left;
   color:  #E31837;
   background-color: #FFFFFF;
   }
+
+  .textCopied{
+    margin-left: 20px;
+
+  }
+
+  #amunt{
+    margin-top: 70px;
+    margin-left: 50px;
+  }
+
+  #copy-button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    margin-left: 80px;
+     
+}
+  

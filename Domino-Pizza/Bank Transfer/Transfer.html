@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-  <img src="../Images/left-Arrow.svg" class="img1"/>
+  <a href="/Domino-Pizza/index.html"><img src="../Images/left-Arrow.svg" class="img1"/></a>
     <h3 class="header">Bank Transfer</h3>
     <p class="firstP">Transfer the exact amount specified to the account below.</p>
     <div class="cover">
@@ -39,11 +39,11 @@
          <div class="details">
             <p>Domino’s NG</p>
             
-            <p><span id="accountNumber" class="copy2">N8500</span> </p>
-                    <button class="copy-btn" onclick="copyTextToClipboard()"> 
-                        <img src="../Images/copy.svg" class="textToCopy"/>
+            <p><span id="amunt">N8500</span> 
+                    <button class="copy-button" onclick="copyClipboard()"> 
+                        <img src="../Images/copy.svg" class="textCopied"/>
                     </button>
-                    <div id="copyNotification" style="display: none;">Copied to clipboard!</div> 
+                    <div id="notificationCopy" style="display: none;">Copied!</div> </p>
          </div>
     </div>
   </div>
@@ -52,9 +52,43 @@
     <a href="Transfer2.html"><button class="btn-transfer">I’ve Transfered the Amount</button>
       </a>
 
-    <button class="btn-change">Change Payment Method</button>
+    <a href="/Domino-Pizza/index.html"><button class="btn-change">Change Payment Method</button></a>
 
     <script src="/Domino-Pizza/script.js"></script>
+
+    <script>
+const countdownElement = document.getElementById('countdown');
+
+function startCountdown() {
+    let timeLeft = 30; // 30 seconds countdown
+
+    function updateCountdown() {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+
+        countdownElement.textContent = (minutes < 10 ? '0' : '') + minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+
+        if (timeLeft <= 0) {
+            clearInterval(countdownInterval);
+            // Timer has expired, you can add your logic here
+            countdownElement.textContent = '00:00'; // Optionally, update the display to show 00:00
+            // Redirect or perform other actions here
+            return;
+        }
+
+        timeLeft--;
+    }
+
+    updateCountdown(); // Initial call to display countdown immediately
+
+    const countdownInterval = setInterval(updateCountdown, 5000); // Update countdown every second
+}
+
+// Start the countdown when the page loads
+document.addEventListener('DOMContentLoaded', startCountdown);
+
+
+    </script>
 
 </body>
 </html>

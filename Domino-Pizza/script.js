@@ -78,10 +78,23 @@ function copyTextToClipboard() {
           document.getElementById("copyNotification").style.display = "block"; // Show notification
           setTimeout(() => {
               document.getElementById("copyNotification").style.display = "none"; // Hide notification after 2 seconds
-          }, 2000);
+          }, 1000);
       })
       .catch(error => console.error('Unable to copy account number: ', error));
 }
+
+
+function copyClipboard(){
+    const textCopied = document.getElementById("amunt").textContent;
+    navigator.clipboard.writeText(textCopied)
+        .then(() => {
+            document.getElementById("notificationCopy").style.display = "block"; // Show notification
+            setTimeout(() => {
+                document.getElementById("notificationCopy").style.display = "none"; // Hide notification after 2 seconds
+            }, 1000);
+        })
+        .catch(error => console.error('Unable to copy account amount: ', error));
+  }
 
 
   //PAYMENT DETAILS FETCH
@@ -164,17 +177,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // Payment countdown timer
-const timeLeft = 30;
-const timerElement = document.getElementById('countdown');
+const countdownElement = document.getElementById('countdown');
 
-const countdownTimer = setInterval(function() {
-    const minutes = Math.floor(timeLeft / 60);
-    const seconds = timeLeft % 60;
+function startCountdown() {
+    let timeLeft = 30; // 30 seconds countdown
 
-    timerElement.textContent = (minutes < 10 ? '0' : '') + minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+    function updateCountdown() {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
 
-    if (timeLeft-- <= 0) {
-        clearInterval(countdownTimer);
-        window.location.href = "newpage.html"; // Redirect to new page when timer expires
+        countdownElement.textContent = (minutes < 10 ? '0' : '') + minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+
+        if (timeLeft <= 0) {
+            clearInterval(countdownInterval);
+            // Timer has expired, you can add your logic here
+            countdownElement.textContent = '00:00'; // Optionally, update the display to show 00:00
+            // Redirect or perform other actions here
+            return;
+        }
+
+        timeLeft--;
     }
-}, 5000);
+
+    updateCountdown(); // Initial call to display countdown immediately
+
+    const countdownInterval = setTimeout(updateCountdown, 1000);
+}
+
+// Start the countdown when the page loads
+document.addEventListener('DOMContentLoaded', startCountdown);
