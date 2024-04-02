@@ -19,10 +19,14 @@ body {
   h5 {
     text-align: center;
     color: #333;
+    font-weight: 400;
+    font-size: large;
+
   }
   
   #payment-form {
     margin-bottom: 20px;
+    
   }
   
   label {
@@ -31,7 +35,7 @@ body {
     color: #333;
   }
   
-  input[type="text"] {
+  input[type="email"], input[type="text"]{
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -40,8 +44,7 @@ body {
     box-sizing: border-box;
   }
   
-  button[type="submit"],
-  #btn6 {
+ #pay-btn {
     width: 100%;
     padding: 10px;
     background-color: red;
@@ -55,9 +58,5 @@ body {
     background-color: rgb(167, 22, 22);
   }
   
-  #payment-status {
-    text-align: center;
-    color: green;
-    font-weight: bold;
-  }
+  
   
