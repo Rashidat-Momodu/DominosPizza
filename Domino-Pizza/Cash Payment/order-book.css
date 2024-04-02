@@ -70,7 +70,7 @@ margin-top: -10px;
 
 .ide{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 
 .img5{
@@ -86,4 +86,9 @@ background-color: #E31836;
 color: #FFFFFF;
 border: none;
 margin-top: 50px
+}
+
+
+.textToCopy{
+    margin-left: -130px;
 }

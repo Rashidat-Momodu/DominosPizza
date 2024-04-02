@@ -206,3 +206,7 @@ function startCountdown() {
 
 // Start the countdown when the page loads
 document.addEventListener('DOMContentLoaded', startCountdown);
+
+
+
+

@@ -3,29 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Order Book</title>
     <link rel="stylesheet" href="order-book.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="inner-container">
-            <div class="text">
                 <img src="../Images/checkbox-circle.svg" class="img13"/>
                 <h5 class="receive">Order Booked!</h5>
                 <p class="use">Amount to pay on delivery:</p>
                 <p class="use">Use the order ID below to track your order.</p>
                 <div class="ide">
-                <p class="order">Order ID:</p>
+                    <p class="order">Order ID: <span id="orderID"></span></p>
                 <button class="copy-button" onclick="copyTextToClipboard()"> 
                     <img src="../Images/copy.svg" class="textToCopy"/>
                 </button>
-                <div id="copyNotification" style="display: none;">Copied to clipboard!</div> 
-            </div>
-        </div>
+                <div id="copyNotification" style="display: none;">Copied!</div> 
         </div>
         <button class="btn13">Continue Shopping</button>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        //ORDER ID GENERATION
+function generateOrderID() {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const length = 8; // You can adjust the length of the order ID as needed
+    let orderId = '';
+
+    for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * characters.length);
+        orderId += characters[randomIndex];
+    }
+
+    return orderId;
+}
+
+function copyTextToClipboard() {
+    const orderIdElement = document.getElementById('orderID');
+    const orderId = orderIdElement.textContent.trim();
+
+    const textarea = document.createElement('textarea');
+    textarea.value = orderId;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+
+    const copyNotification = document.getElementById('copyNotification');
+    copyNotification.style.display = 'block';
+
+    setTimeout(() => {
+        copyNotification.style.display = 'none';
+    }, 2000);
+}
+
+window.onload = function() {
+    const orderIdElement = document.getElementById('orderID');
+    orderIdElement.textContent = generateOrderID();
+};
+
+    </script>
 </body>
 </html>

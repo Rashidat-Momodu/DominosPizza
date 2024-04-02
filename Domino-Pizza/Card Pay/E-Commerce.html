@@ -5,24 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-commerce Payment Page</title>
   <link rel="stylesheet" href="E-Commerce.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="Pay-container">
     <h5>Select Payment Method </h5>
     <form id="payment-form">
-      <label for="card-number">Card Number:</label>
-      <input type="text" id="card-number" placeholder="Enter card number">
-      <label for="card-expiry">Expiration Date:</label>
-      <input type="text" id="card-expiry" placeholder="MM/YY">
-      <label for="card-cvc">CVC:</label>
-      <input type="text" id="card-cvc" placeholder="CVC">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" placeholder="Enter email address">
+      <label for="amount">Amount:</label>
+      <input type="text" id="amount" placeholder="Enter amount">
+     
     </form>
-    <div id="payment-status"></div>
-    <a href="/Domino-Pizza/Card Pay/Success2.html"><button id="btn6">Pay Now</button>
-  </div></a>
+    <button id="pay-btn">Pay Now</button> <!-- Changed button type to "button" -->
+  </div>
 
   <script src="script.js"></script>
-  <script src="https://js.stripe.com/v3/"></script>
+  <script src="https://js.paystack.co/v1/inline.js"></script> <!-- Include Paystack inline script -->
+  <script>
+    // Function to handle Paystack payment initiation
+    function initiatePayment() {
+      var email = document.getElementById('email').value;
+      var amount = document.getElementById('amount').value;
+
+      var handler = PaystackPop.setup({
+        key: 'pk_test_bbfa586d4256a0bc75d4b9612da06743c3d30a3f', // Replace with your Paystack public key
+        email: email,
+        amount: amount * 100, // Paystack expects amount in kobo (the base currency unit in Nigeria)
+        currency: 'NGN', // Nigerian Naira
+        ref: 'YOUR_REFERENCE', // Your unique reference
+        callback: function(response) {
+          // Payment was successful
+          if (response.status === 'success') {
+            window.location.href = 'Success2.html'; // Redirect to success page
+          } else {
+            window.location.href = 'Error.html'; // Redirect to error page
+          }
+        },
+        onClose: function() {
+          // Payment was not completed
+          window.location.href = 'Error.html'; // Redirect to error page
+        }
+      });
+
+      handler.openIframe();
+    }
+
+    // Attach click event listener to the "Pay Now" button
+    document.getElementById('pay-btn').addEventListener('click', initiatePayment);
+  </script>
 </body>
 </html>
