@@ -1,3 +1,11 @@
+.savedItemContainer {
+    margin: 0px auto;
+    width: 343px;
+    height: 278px;
+    top: 68px;
+    left: 25px;
+}
+
 .savedHeading {
     font-family: Arial;
     font-size: 24px;
@@ -6,3 +14,9 @@
     text-align: left;
     color: #2B3241;
 }
+
+.img1{
+    fill: #444D61;
+  
+}
+
