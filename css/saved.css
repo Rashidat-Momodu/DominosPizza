@@ -1,3 +1,27 @@
+.savedItemContainer {
+    margin: 0px auto;
+    width: 343px;
+    height: 278px;
+    top: 68px;
+    left: 25px;
+}
+
+.savedpic {
+    display: flex;
+    padding: 5px;
+}
+
+.savedd {
+    background-color: #fff;
+    width: 148px;
+    height: 132px;
+    gap: 0px;
+    border-radius: 4px 0px 0px 0px;
+    opacity: 0px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
 .savedHeading {
     font-family: Arial;
     font-size: 24px;
@@ -6,3 +30,14 @@
     text-align: left;
     color: #2B3241;
 }
+
+.img1{
+    fill: #444D61;
+  
+}
+
+.editclass {
+    display: flex;
+    justify-content: space-between;
+}
+

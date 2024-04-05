@@ -1,6 +1,9 @@
 .orderContainer {
     margin: 0px auto;
-    width: 400px;
+    width: 343px;
+    height: 278px;
+    top: 68px;
+    left: 25px;
 }
 .orderHeading {
     font-size: 24px;
@@ -9,16 +12,16 @@
     color: #2B3241;
 }
 .card{
-    border: 1px solid black;
     margin: 20px;
     padding: 5px;
     box-shadow: 0 8px 16pz 0 #000000;
 }
 
-.cardContainer {
-    border: 1px solid black;
-    
-}
+.img1{
+    fill: #444D61;
+  
+  }
+
 
 .cardContent {
     display: flex;

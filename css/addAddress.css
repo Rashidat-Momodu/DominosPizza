@@ -2,6 +2,14 @@ body {
     background-color: #ffffff;
 }
 
+.addressContainer {
+    margin: 0px auto;
+    width: 343px;
+    height: 278px;
+    top: 68px;
+    left: 25px;
+}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -13,6 +21,11 @@ h4 {
     font-weight: 700;
     color: #2B3241;
 }
+
+.img1{
+    fill: #444D61;
+  
+  }
 
 .label {
     display: flex;
@@ -45,8 +58,9 @@ h4 {
     color: #E31836;
     font-size: 14px;
     font-weight: 700;
-    font-family: raleway;
+    font-family: arial;
     border-radius: 8px;
+    margin: 5px;
 }
 
 .btn2 {
@@ -58,6 +72,7 @@ h4 {
     font-family: arial;
     border: none;
     border-radius: 8px;
+    margin: 5px;
 }
 .btn3 {
     padding: 16px;
