@@ -1,0 +1,95 @@
+/* CSS for pizza cart */
+
+.pizza-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .pizza-item {
+    display: flex;
+    align-items: center;
+    border: 5px solid #e6e6e6;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  
+  .pizza-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+  .pizza-details {
+    flex-grow: 1;
+  }
+  
+  .price {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .actions i {
+    margin-left: 10px;
+    font-size: 1.5em; /* Adjust icon size as needed */
+  }
+  
+  .delete-icon {
+    color: red;
+  }
+  
+  .edit-icon {
+    color: blue;
+  }
+  
+  .add-to-cart {
+    color: green;
+  }
+  
+  .quantity {
+    margin: 0 10px;
+    font-size: 1.2em;
+  }
+  
+  .minus-icon, .plus-icon {
+    cursor: pointer;
+  }
+  
+  .subtotal-row, .checkout-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .subtotal, .actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .subtotal-price {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  .correct-icon {
+    color: green;
+  }
+  
+  .apply-btn, .checkout-btn {
+    margin-left: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+  
+  .checkout-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .checkout-btn i {
+    margin-right: 5px;
+  }
+  
+  

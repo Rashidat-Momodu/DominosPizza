@@ -26,7 +26,7 @@ body{
     top: 0;
     left: 0;
     padding: 2px;
-   background-image: url(https://img.freepik.com/premium-photo/tasty-pizza-ingredients-isolated-white-background_185193-5369.jpg);
+   background-image: url(./images/Pizza.png);
    color:white;
 }
 .sidebar-menu{
@@ -104,21 +104,33 @@ border-radius: 60px;
 }
 .main-header {
     font-size: 20px;
-    position: fixed;
+   padding-left: 350px;
     top: 100px;
     left: 360px;
+}
+.deal-pizza img{
+    width: 1100px;
+    height: 400px;
+    top: 122px;
+    left: 25px;
+    gap: 12px;
+    opacity: 5px;
 }
 .categories {
     background-color: #ffffff; 
     padding: 10px;
+  margin: auto;
+ 
 }
 
 .categories h2 {
-    margin-bottom: 30px; /* Spacing below the heading */
+    margin-bottom: 200px; /* Spacing below the heading */
+    margin: auto;
+
 }
 
 .categories ul {
-    font-size: 30px;
+    font-size: 22px;
     position: sticky;
     top: 350px;
     list-style: none; 
@@ -128,82 +140,52 @@ border-radius: 60px;
 
 .categories ul li {
     margin-right: 60px; /* Spacing between list items */
+  
 }
 
+.categories ul li{
+      border: 1px solid transparent; /* Add transparent border initially */
+     }
+     .categories ul li a{
+        text-decoration: none;
+        color: black;
+     }
 
-
-.categories ul li a {
-    text-decoration: none; 
-    color: #000000;
-    border: 1px solid transparent; /* Add transparent border initially */
-   
-}
-
-.categories ul li a:hover {
-   
-    border-color: #ff0000;
+.categories ul li:hover {
+       border-color: #ff0000;
 
 }
 
 
 .main-title-1 {
     font-size: 30px;
-    position: fixed;
-    top: 200px;
-    left: 350px;
+   margin: auto;
+   padding-left: 350px;
    
 }
 
-.main-pizza{
-    display:flex;
-    float:right;
-    margin-left: 450px;
-    margin-top: 2px;
-    position: sticky;
-    top: 100px;
-    left: 100px;
-}
-.main-pizza li{
-    flex: 0 0 48%;
-    max-width: 100%; 
-    height: auto; 
-    position: fixed;
-    top:100%;
-    left:360px ;
-}
-.head h1{
-    text-align: center;
-    font-size: 43px;
-    color: rgb(255, 11, 11);
-    margin-top: 53px;
-    padding: 12px;
-    margin-left: 123px;
-}
-.head span{
-    color:  rgb(255, 102, 0);
-}
 .tr{
     margin-top: 200px;
 }
 .crd{
     display:flex;
- 
-    margin-left: 450px;
+ padding-left: 150px;
+    margin-left: 190px;
     margin-top: 2px;
     position: static;
-    top: 100px;
-    left: 200px;
-    
+ 
 }
 .crd .card{
     width: 300px;
     border-radius: 10px;
     margin-inline: 19px;
     padding: 8px;
+    margin-right: 200px;
 
 }
 .card img{
-    width: 100%;
+    width: 500px;
+   margin-right: 100px;
 }
 .card h2{
     margin-top: 11px;
@@ -230,5 +212,38 @@ border-radius: 60px;
     cursor: pointer;
 }
 
+.popup-container {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.popup-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.popup-image {
+    max-width: 100%;
+    max-height: 80vh;
+}
 
   
